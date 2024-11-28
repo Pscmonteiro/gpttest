@@ -44,7 +44,7 @@ git clone https://github.com/askrella/whatsapp-chatgpt.git
 cd repo
 
 # Prompt user for API key
-read -p "Enter your OpenAI API key: " api_key
+read -p "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" api_key
 
 # Replace API key variable in Docker Compose file
 sed -i "s/OPENAI_API_KEY:.*/OPENAI_API_KEY: \"$api_key\"/g" docker-compose.yml
